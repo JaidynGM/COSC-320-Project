@@ -16,11 +16,11 @@ tweetnums=[(3175, tweets3175),(6250, tweets6250),(12500, tweets12500),(25000, tw
 with open('clean_AcronymsFile-milestone4.csv', 'r') as file:
     reader = csv.reader(file)
     for row in reader:
-        tuple=(row[0],row[1])
+        tuple=(row[0],row[0])
         abbreviations.append(tuple)
         
 for maxTweet in tweetnums:        
-    with open('upDatedTweetData-milestone4.csv', 'r') as file:
+    with open('bigFileofcsv/upDatedTweetData-milestone4.csv', 'r') as file:
         reader = csv.reader(file)
         i=0
         for row in reader:
